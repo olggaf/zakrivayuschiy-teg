@@ -30,14 +30,15 @@
 .page-content {
   margin-inline: auto;
   width: clamp(375px, 66vw, 700px);
-  border: 2px solid var(--accent-color);
+  /* border: 2px solid var(--accent-color); */
 }
 .header {
   background-color: var(--bg-color);
   margin-block-end: 98px;
   text-align: center;
-  font-family: var(--accent-font);
+  font-family: var(--accent-font), fantasy, sans-serif;
   text-transform: uppercase;
+  border: 2px solid var(--accent-color);
 }
 
 .heading {
@@ -72,7 +73,6 @@
 
 .theme-menu__button:hover {
   opacity: 0.6;
-  transition: opacity 0.3s ease;
 }
 .theme-menu__button:disabled {
   pointer-events: none;
@@ -109,7 +109,7 @@
   height: 3px;
   background-color: currentColor;
   transform: scaleX(1);
-  transition: transform 0.3s ease;
+  /* transition: transform 0.3s ease; */
 }
 
 /* arrow animation */
@@ -141,6 +141,7 @@
 }
 .card {
   background-color: var(--bg-color);
+  border: 2px solid var(--accent-color);
 
   /* border: 1px solid red; */
 }
@@ -180,7 +181,7 @@
   appearance: none;
   border: 2px solid var(--accent-color);
   background-color: var(--bg-color);
-  font-family: var(--accent-font);
+  font-family: var(--accent-font), fantasy, sans-serif;
   font-size: 14px;
   cursor: pointer;
   transition: box-shadow 0.3s ease, color 1s ease;
@@ -193,7 +194,6 @@
 }
 .btn:focus-visible {
   box-shadow: 2px 2px currentColor;
-  transition: box-shadow 0.3s ease;
 }
 .btn:hover {
   color: var(--bg-color);
@@ -233,7 +233,6 @@
 }
 .card__icon-button:focus-visible {
   outline: 2px solid var(--accent-color);
-  transition: outline 0.3s ease;
 }
 /* heart icon svg classes */
 .sparks {
@@ -242,7 +241,7 @@
 /* heart core */
 .card__icon-button .like-icon .core {
   fill: transparent;
-  transition: fill 0.3s linear;
+  transition: fill 0.3s linear 0.06s;
 }
 
 .card__icon-button:hover .like-icon .core {
@@ -284,7 +283,7 @@
 
 .card__icon-button .like-icon.is-liked .main-body {
   fill: var(--heart-icon-red-color);
-  transition: fill 0.3s linear;
+  transition: fill 0.3s linear 0.06s;
 }
 
 .card__icon-button .like-icon.is-liked .contour {
@@ -307,6 +306,7 @@
 }
 
 .card__like-button {
+  cursor: pointer;
   padding: 12px 37px 10px 34px;
   /* border: 1px solid red; */
 }
@@ -314,7 +314,11 @@
   position: relative;
   z-index: 1;
 }
+.page-footer {
+  margin: 50px 0 0;
+}
 .save-memories-button {
+  cursor: pointer;
   padding: 14px 22px 14px 19px;
   margin-inline: auto;
   display: flex;
