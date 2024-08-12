@@ -46,6 +46,9 @@
   margin-block-start: 2em;
   line-height: 120%;
 }
+.heading-link {
+  text-decoration: none;
+}
 .heading-description {
   font-size: clamp(0.875rem, 0.6769rem + 0.8451vw, 1.4375rem);
   line-height: 220%;
