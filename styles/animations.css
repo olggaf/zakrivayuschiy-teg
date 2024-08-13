@@ -12,6 +12,16 @@
 
 Кроме этого, не меняйте HTML переключателя тем. Его разметка также гарантирует работу своего скрипта.
 */
+
+@keyframes arrow {
+  0% {
+    translate: 0px;
+  }
+  100% {
+    translate: 4px;
+  }
+}
+
 @keyframes heartscale {
   0% {
     scale: 1;

@@ -20,9 +20,7 @@
   </head>
   <body class="page">
     <header class="header page-content">
-      <div class="heading">
-        <a class="heading-link">&lt;/HTML&gt;</a>
-      </div>
+      <a class="heading-link heading">&lt;/HTML&gt;</a>
       <h1 class="heading-description">закрывающий тег</h1>
       <nav class="theme-menu header__theme-menu">
         <!-- Не меняйте разметку этого списка, иначе скрипты перестанут работать -->
@@ -593,7 +591,7 @@
           <svg viewBox="0 0 29 28" class="icon-floppy">
             <use href="./svg/floppy.svg#floppy-new" />
           </svg>
-          <span class="save-memories-txt">Сохранить на&nbsp;память</span>
+          <span class="button__text">Сохранить на&nbsp;память</span>
         </button>
       </div>
     </main>
@@ -605,13 +603,13 @@
         </svg>
         <p class="dialog-window-text">Вставьте дискету, чтобы продолжить</p>
       </div>
-      <form>
+      <form method="dialog">
         <button
           class="dialog-window-button btn"
           type="button"
           onclick="window['dialog-save-memories'].close()"
         >
-          <span class="dialog-window-button-text">OK</span>
+          <span class="button__text">OK</span>
         </button>
       </form>
     </dialog>
